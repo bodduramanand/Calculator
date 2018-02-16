@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<link rel="shortcut icon" href="calc.ico"/>
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Bad+Script|Bitter|Crete+Round|Merriweather+Sans|Patua+One|Roboto|Roboto+Slab|Rubik|Source+Sans+Pro" rel="stylesheet">
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<div class="header"><h1>CALCULATOR</h1></div>
+
+<div id="calculator">
+	<div class="screen">
+	<form id="myform">
+		<input type="text" name="input" id="forscreen">
+	</form>
+	</div>
+
+	<ul class="operation">
+	<div class="numbers">
+		<li class="num" id="number" value="9" onclick='v("9")'>9</li>
+		<li class="num" id="number" value="8" onclick='v("8")'>8</li>
+		<li class="num" id="number" value="7" onclick='v("7")'>7</li>
+		<li class="num" id="number" value="6" onclick='v("6")'>6</li>
+		<li class="num" id="number" value="5" onclick='v("5")'>5</li>
+		<li class="num" id="number" value="4" onclick='v("4")'>4</li>
+		<li class="num" id="number" value="3" onclick='v("3")'>3</li>
+		<li class="num" id="number" value="2" onclick='v("2")'>2</li>
+		<li class="num" id="number" value="1" onclick='v("1")'>1</li>
+		<li class="num" id="number" value="0" onclick='v("0")'>0</li>
+		<li class="clear" id="reset" value="Clear" onclick="nowReset()">Clear</li>
+    </div>
+    <div class="operators">
+      <div class="signs">
+		<li class="optr" id="operator" value="+" onclick='v("+")'>+</li>
+        <li class="optr" id="operator" value="-" onclick='v("-")'>-</li>
+        <li class="optr" id="operator" value="*" onclick='v("*")'>x</li>
+        <li class="optr" id="operator"  value="/" onclick='v("/")'>/</li>
+        <li class="optr" id="operator"  value="%" onclick='v("%")'>%</li>
+		<li class="optr" id="operator" value="." onclick='v(".")'>.</li>
+      </div>		
+		<li class="optr" id="equal" onclick='e()'><span>=</span></li>
+	</div>
+	</ul>
+</div>
+
+</body>
+</html>
